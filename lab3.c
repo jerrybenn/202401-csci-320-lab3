@@ -24,7 +24,7 @@ int** read_board_from_file(char* filename)
     }
     for(int i = 0;i<ROW_SIZE;i++) {
         for (int j = 0;j<COL_SIZE;j++) {
-            fscanf(fp,"%d,",&(sudoku_board[i][j]));
+            fscanf(fp,"%d,",&(board[i][j]));
         }
     }
         fclose(fp);
